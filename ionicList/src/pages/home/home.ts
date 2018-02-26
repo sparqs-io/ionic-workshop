@@ -32,6 +32,7 @@ export class HomePage {
   }
 
   onItemSelect(item: string) {
+    debugger;
     console.log("Selected Item", item);
   };
 
