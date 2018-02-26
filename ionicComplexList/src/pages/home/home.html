@@ -6,6 +6,25 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of items">
+      <ion-item>
+        <ion-avatar item-start>
+          <img [src]="item.avatarUrl" alt="Test">
+        </ion-avatar>
+        <h2>{{ item.name }}</h2>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="primary" (click)="onClickButton(item)">
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>
+        <button ion-button color="secondary">
+          <ion-icon name="call"></ion-icon>
+          Anrufen
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>

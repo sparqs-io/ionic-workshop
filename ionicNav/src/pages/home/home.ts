@@ -75,4 +75,10 @@ export class HomePage {
     ];
   }
 
+  onOpenDetailsView(item: any) {
+    this.navCtrl.push(NavigationDetailsPage, {
+      item: item
+    });
+  }
+
 }

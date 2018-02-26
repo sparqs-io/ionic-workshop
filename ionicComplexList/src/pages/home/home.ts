@@ -41,4 +41,8 @@ export class HomePage {
 
   }
 
+  onClickButton(item) {
+    console.log(item);
+  }
+
 }

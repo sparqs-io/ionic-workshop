@@ -1,14 +1,21 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Component } from "@angular/core";
+import { NavController, PopoverCmp, PopoverController } from "ionic-angular";
+import { PopoverPage } from "../popover/popover";
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: "page-home",
+  templateUrl: "home.html"
 })
 export class HomePage {
+  constructor(
+    public navCtrl: NavController,
+    public popoverCtrl: PopoverController
+  ) {}
 
-  constructor(public navCtrl: NavController) {
-
+  onPresentPopover() {
+    let popover = this.popoverCtrl.create(PopoverPage, {
+      data: 'Hello World'
+    })
+    popover.present();
   }
-
 }
