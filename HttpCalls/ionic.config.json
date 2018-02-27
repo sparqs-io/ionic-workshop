@@ -1,0 +1,8 @@
+{
+  "name": "HttpCalls",
+  "app_id": "7372fa81",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let dummy of dummies">
+        <h2>{{ dummy.name }}</h2>
+        <h3>{{ dummy.age }}</h3>
+        <p>{{ dummy.isAlive }}</p>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button color="primary" (click)="onCreateDummy()">Dummy anlegen</button>
+  <button ion-button color="danger" (click)="onThrowError()">Feature anlegen</button>
+</ion-content>

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="onTakePhoto()">Cheese</button>
+  <img [src]="base64image" style="width:100%;" />
+  <button ion-button (click)="onToggleLight()">Flash Light</button>
+  <button ion-button (click)="onTestSim()">Get Sim Data</button>
+  <button ion-button (click)="onSendSms()">send sms</button>
+</ion-content>
